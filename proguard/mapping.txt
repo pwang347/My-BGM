@@ -1,0 +1,1127 @@
+com.zenas.backgroundmusic.BackgroundMusic -> com.zenas.backgroundmusic.BackgroundMusic:
+    android.media.MediaPlayer mp -> a
+    float globalVolume -> b
+    boolean shuffle -> c
+    int currentPlaylist -> d
+    int currentSong -> e
+    boolean startPlaylist -> f
+    int positionInSong -> g
+    boolean songCompleted -> h
+    java.util.List playlists -> i
+    java.util.List playlists_songNames -> j
+    java.util.List playlistNames -> k
+    java.util.List playlistColors -> l
+    java.util.List directories -> m
+    java.lang.String wallpaper_path -> n
+    boolean play -> o
+    boolean animation -> p
+    boolean autoplay -> q
+    boolean wallpaper_notStretched -> r
+    boolean hideHelp -> s
+    boolean serviceRunning -> t
+    boolean stopOnExit -> u
+    void setStopOnExit(boolean) -> a
+    boolean getStopOnExit() -> a
+    void setServiceRunning(boolean) -> b
+    boolean getServiceRunning() -> b
+    void setHideHelp(boolean) -> c
+    boolean getHideHelp() -> c
+    void setWallpaperNotStretched(boolean) -> d
+    boolean getWallpaperNotStretched() -> d
+    void setWallpaperPath(java.lang.String) -> a
+    java.lang.String getWallpaperPath() -> e
+    void setAnimation(boolean) -> e
+    boolean getAnimation() -> f
+    float getVolume() -> g
+    void setVolume(float) -> a
+    boolean getShuffle() -> h
+    void setShuffle(boolean) -> f
+    boolean getAutoplay() -> i
+    void setAutoplay(boolean) -> g
+    int getCurPlaylist() -> j
+    void setCurPlaylist(int) -> a
+    int getCurSong() -> k
+    void setCurSong(int) -> b
+    java.util.List getPlaylists() -> l
+    void setPlaylists(java.util.List) -> a
+    java.util.List getPlaylistsSongNames() -> m
+    void setPlaylistsSongNames(java.util.List) -> b
+    java.util.List getPlaylistNames() -> n
+    void setPlaylistNames(java.util.List) -> c
+    java.util.List getPlaylistColors() -> o
+    void setPlaylistColors(java.util.List) -> d
+    void setPlayStarted(boolean) -> h
+    void setPositionInSong(int) -> c
+    int getPositionInSong() -> p
+    android.media.MediaPlayer getMp() -> q
+    void setSongCompleted(boolean) -> i
+    java.util.List getDirectories() -> r
+    void setDirectories(java.util.List) -> e
+    boolean getPlay() -> s
+    void setPlay(boolean) -> j
+com.zenas.backgroundmusic.MusicService -> com.zenas.backgroundmusic.MusicService:
+    java.lang.String song -> c
+    int time -> d
+    com.zenas.backgroundmusic.MusicService ms -> a
+    int classID -> e
+    java.util.List playlists -> f
+    int currentPlaylist -> g
+    int currentSong -> h
+    java.lang.String START_PLAY -> b
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    int onStartCommand(android.content.Intent,int,int) -> onStartCommand
+    void play() -> c
+    void onDestroy() -> onDestroy
+    void stop() -> d
+    java.lang.String getFileFromPath(java.lang.String) -> a
+    void playRandomSong() -> a
+    void playNextSong() -> b
+    java.lang.String getNameFromFile(java.lang.String) -> b
+    java.lang.String getNameFromPath(java.lang.String) -> c
+    int randInt(int,int) -> a
+    java.util.List access$0(com.zenas.backgroundmusic.MusicService) -> a
+    int access$1(com.zenas.backgroundmusic.MusicService) -> b
+com.zenas.backgroundmusic.MusicService$1 -> com.zenas.backgroundmusic.a:
+    com.zenas.backgroundmusic.MusicService this$0 -> a
+    void onCompletion(android.media.MediaPlayer) -> onCompletion
+com.zenas.backgroundmusic.activities.MainActivity -> com.zenas.backgroundmusic.activities.MainActivity:
+    android.widget.ListView list -> c
+    android.widget.Button moveUpBtn -> d
+    android.widget.Button moveDownBtn -> e
+    android.widget.Button doneBtn -> f
+    java.lang.String SD_PATH -> g
+    android.content.Context context -> a
+    com.zenas.backgroundmusic.activities.MainActivity ma -> b
+    java.util.List playlists -> h
+    java.util.List playlists_songNames -> i
+    java.util.List playlistNames -> j
+    java.util.List playlistColors -> k
+    java.util.List directories -> l
+    int currentPlaylist -> m
+    int selectedPlaylist -> n
+    int currentSong -> o
+    int tempColor -> p
+    boolean shuffle -> q
+    boolean autoplay -> r
+    float volume -> s
+    int song_position -> t
+    com.zenas.backgroundmusic.util.PreferenceUtils tinydb -> u
+    android.widget.ImageView wallpaperView -> v
+    java.lang.String wallpaper_path -> w
+    android.graphics.Bitmap myBitmap -> x
+    boolean wallpaper_notStretched -> y
+    boolean hideHelp -> z
+    android.widget.Button helpBtn -> A
+    boolean stopOnExit -> B
+    boolean exiting -> C
+    void onBackPressed() -> onBackPressed
+    void onCreate(android.os.Bundle) -> onCreate
+    void onPause() -> onPause
+    void onResume() -> onResume
+    void init() -> b
+    void settleDifferences() -> c
+    void createPlaylistDialog() -> d
+    void createPlaylist(java.lang.String,int,int,java.util.List) -> a
+    void editPlaylistDialog(int) -> a
+    void showError(java.lang.String) -> a
+    void swapPlaylistIndexes(int,int) -> a
+    void updatePlaylist(android.widget.ListView) -> a
+    void movePlaylistDown(int) -> b
+    void movePlaylistUp(int) -> c
+    void fillPlaylist(java.lang.String,int) -> a
+    java.util.List lookForMissingFiles(java.util.List) -> a
+    java.util.List lookForNewFiles(java.util.List) -> b
+    void differencesDialog(boolean,java.util.List) -> a
+    java.lang.String getFileFromPath(java.lang.String) -> b
+    void playlists_getPref() -> e
+    void playlists_putPref() -> f
+    void playlistsSongNames_getPref() -> g
+    void playlistsSongNames_putPref() -> h
+    void playlistNames_getPref() -> i
+    void playlistNames_putPref() -> j
+    void playlistColors_getPref() -> k
+    void playlistColors_putPref() -> l
+    void volume_getPref() -> m
+    void shuffle_getPref() -> n
+    void autoplay_getPref() -> o
+    void directories_getPref() -> p
+    void directories_putPref() -> q
+    void hideHelp_getPref() -> r
+    void stopOnExit_getPref() -> s
+    void wallpaperPath_getPref() -> t
+    void wallpaperNotStretched_getPref() -> u
+    void showDirectoryDialog() -> a
+    java.lang.String getNameFromFile(java.lang.String) -> c
+    java.lang.String getNameFromPath(java.lang.String) -> d
+    void updateWallpaper() -> v
+    int calculateInSampleSize(android.graphics.BitmapFactory$Options,int,int) -> a
+    android.graphics.Bitmap decodeSampledBitmap(java.io.File,int,int) -> a
+    void addSongToList(int,java.lang.String,boolean) -> a
+    void onDestroy() -> onDestroy
+    void access$0(com.zenas.backgroundmusic.activities.MainActivity,int) -> a
+    void access$1(com.zenas.backgroundmusic.activities.MainActivity,int) -> b
+    void access$2(com.zenas.backgroundmusic.activities.MainActivity,android.widget.Button) -> a
+    android.widget.Button access$3(com.zenas.backgroundmusic.activities.MainActivity) -> a
+    int access$4(com.zenas.backgroundmusic.activities.MainActivity) -> b
+    void access$5(com.zenas.backgroundmusic.activities.MainActivity,int) -> c
+    android.widget.ListView access$6(com.zenas.backgroundmusic.activities.MainActivity) -> c
+    void access$7(com.zenas.backgroundmusic.activities.MainActivity,android.widget.ListView) -> a
+    void access$8(com.zenas.backgroundmusic.activities.MainActivity,android.widget.Button) -> b
+    android.widget.Button access$9(com.zenas.backgroundmusic.activities.MainActivity) -> d
+    void access$10(com.zenas.backgroundmusic.activities.MainActivity,int) -> d
+    void access$11(com.zenas.backgroundmusic.activities.MainActivity,android.widget.Button) -> c
+    android.widget.Button access$12(com.zenas.backgroundmusic.activities.MainActivity) -> e
+    void access$13(com.zenas.backgroundmusic.activities.MainActivity) -> f
+    void access$14(com.zenas.backgroundmusic.activities.MainActivity) -> g
+    void access$15(com.zenas.backgroundmusic.activities.MainActivity) -> h
+    void access$16(com.zenas.backgroundmusic.activities.MainActivity) -> i
+    java.util.List access$17(com.zenas.backgroundmusic.activities.MainActivity) -> j
+    java.util.List access$18(com.zenas.backgroundmusic.activities.MainActivity) -> k
+    java.util.List access$19(com.zenas.backgroundmusic.activities.MainActivity) -> l
+    java.util.List access$20(com.zenas.backgroundmusic.activities.MainActivity) -> m
+    int access$21(com.zenas.backgroundmusic.activities.MainActivity) -> n
+    void access$22(com.zenas.backgroundmusic.activities.MainActivity,int) -> e
+    void access$23(com.zenas.backgroundmusic.activities.MainActivity,int) -> f
+    void access$24(com.zenas.backgroundmusic.activities.MainActivity,int) -> g
+    int access$25(com.zenas.backgroundmusic.activities.MainActivity) -> o
+    int access$26(com.zenas.backgroundmusic.activities.MainActivity) -> p
+    void access$27(com.zenas.backgroundmusic.activities.MainActivity,boolean) -> a
+    void access$28(com.zenas.backgroundmusic.activities.MainActivity) -> q
+    int access$29(com.zenas.backgroundmusic.activities.MainActivity) -> r
+    void access$30(com.zenas.backgroundmusic.activities.MainActivity,java.lang.String,int,int,java.util.List) -> a
+    void access$31(com.zenas.backgroundmusic.activities.MainActivity,java.lang.String) -> a
+    void access$32(com.zenas.backgroundmusic.activities.MainActivity,int) -> h
+    void access$33(com.zenas.backgroundmusic.activities.MainActivity,int,java.lang.String,boolean) -> a
+    void access$34(com.zenas.backgroundmusic.activities.MainActivity,java.util.List) -> a
+    void access$35(com.zenas.backgroundmusic.activities.MainActivity) -> s
+    java.util.List access$36(com.zenas.backgroundmusic.activities.MainActivity) -> t
+    void access$37(com.zenas.backgroundmusic.activities.MainActivity,java.lang.String,int) -> a
+com.zenas.backgroundmusic.activities.MainActivity$1 -> com.zenas.backgroundmusic.activities.a:
+    com.zenas.backgroundmusic.activities.MainActivity this$0 -> a
+    boolean onItemLongClick(android.widget.AdapterView,android.view.View,int,long) -> onItemLongClick
+    com.zenas.backgroundmusic.activities.MainActivity access$0(com.zenas.backgroundmusic.activities.MainActivity$1) -> a
+com.zenas.backgroundmusic.activities.MainActivity$1$1 -> com.zenas.backgroundmusic.activities.b:
+    com.zenas.backgroundmusic.activities.MainActivity$1 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.zenas.backgroundmusic.activities.MainActivity$1$2 -> com.zenas.backgroundmusic.activities.c:
+    com.zenas.backgroundmusic.activities.MainActivity$1 this$1 -> a
+    android.app.AlertDialog val$alertDialog -> b
+    int val$playlist_position -> c
+    void onClick(android.view.View) -> onClick
+com.zenas.backgroundmusic.activities.MainActivity$1$3 -> com.zenas.backgroundmusic.activities.d:
+    com.zenas.backgroundmusic.activities.MainActivity$1 this$1 -> a
+    void onClick(android.view.View) -> onClick
+com.zenas.backgroundmusic.activities.MainActivity$1$4 -> com.zenas.backgroundmusic.activities.e:
+    com.zenas.backgroundmusic.activities.MainActivity$1 this$1 -> a
+    void onClick(android.view.View) -> onClick
+com.zenas.backgroundmusic.activities.MainActivity$1$5 -> com.zenas.backgroundmusic.activities.f:
+    com.zenas.backgroundmusic.activities.MainActivity$1 this$1 -> a
+    void onClick(android.view.View) -> onClick
+com.zenas.backgroundmusic.activities.MainActivity$1$6 -> com.zenas.backgroundmusic.activities.g:
+    com.zenas.backgroundmusic.activities.MainActivity$1 this$1 -> a
+    android.app.AlertDialog val$alertDialog -> b
+    void onClick(android.view.View) -> onClick
+com.zenas.backgroundmusic.activities.MainActivity$1$7 -> com.zenas.backgroundmusic.activities.h:
+    com.zenas.backgroundmusic.activities.MainActivity$1 this$1 -> a
+    int val$playlist_position -> b
+    android.app.AlertDialog val$alertDialog -> c
+    void onClick(android.view.View) -> onClick
+com.zenas.backgroundmusic.activities.MainActivity$10 -> com.zenas.backgroundmusic.activities.i:
+    com.zenas.backgroundmusic.activities.MainActivity this$0 -> a
+    java.util.List val$songs -> b
+    void onClick(android.view.View) -> onClick
+    com.zenas.backgroundmusic.activities.MainActivity access$0(com.zenas.backgroundmusic.activities.MainActivity$10) -> a
+com.zenas.backgroundmusic.activities.MainActivity$10$1 -> com.zenas.backgroundmusic.activities.j:
+    com.zenas.backgroundmusic.activities.MainActivity$10 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.zenas.backgroundmusic.activities.MainActivity$10$2 -> com.zenas.backgroundmusic.activities.k:
+    com.zenas.backgroundmusic.activities.MainActivity$10 this$1 -> a
+    java.util.List val$songs -> b
+    android.app.AlertDialog val$alertDialog -> c
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+com.zenas.backgroundmusic.activities.MainActivity$11 -> com.zenas.backgroundmusic.activities.l:
+    com.zenas.backgroundmusic.activities.MainActivity this$0 -> a
+    java.util.List val$songs -> b
+    void onClick(android.view.View) -> onClick
+    com.zenas.backgroundmusic.activities.MainActivity access$0(com.zenas.backgroundmusic.activities.MainActivity$11) -> a
+com.zenas.backgroundmusic.activities.MainActivity$11$1 -> com.zenas.backgroundmusic.activities.m:
+    com.zenas.backgroundmusic.activities.MainActivity$11 this$1 -> a
+    android.widget.ListView val$lv -> b
+    com.zenas.backgroundmusic.util.ListAdapter val$listOfSongs -> c
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+com.zenas.backgroundmusic.activities.MainActivity$11$2 -> com.zenas.backgroundmusic.activities.n:
+    com.zenas.backgroundmusic.activities.MainActivity$11 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.zenas.backgroundmusic.activities.MainActivity$11$3 -> com.zenas.backgroundmusic.activities.o:
+    com.zenas.backgroundmusic.activities.MainActivity$11 this$1 -> a
+    java.util.List val$songs -> b
+    android.widget.ListView val$lv -> c
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.zenas.backgroundmusic.activities.MainActivity$11$4 -> com.zenas.backgroundmusic.activities.p:
+    com.zenas.backgroundmusic.activities.MainActivity$11 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.zenas.backgroundmusic.activities.MainActivity$11$5 -> com.zenas.backgroundmusic.activities.q:
+    com.zenas.backgroundmusic.activities.MainActivity$11 this$1 -> a
+    android.widget.ListView val$lv -> b
+    com.zenas.backgroundmusic.util.ListAdapter val$listOfSongs -> c
+    void onClick(android.view.View) -> onClick
+com.zenas.backgroundmusic.activities.MainActivity$12 -> com.zenas.backgroundmusic.activities.r:
+    com.zenas.backgroundmusic.activities.MainActivity this$0 -> a
+    android.widget.EditText val$userInput -> b
+    int val$index -> c
+    java.util.List val$songs -> d
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.zenas.backgroundmusic.activities.MainActivity$13 -> com.zenas.backgroundmusic.activities.s:
+    com.zenas.backgroundmusic.activities.MainActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.zenas.backgroundmusic.activities.MainActivity$14 -> com.zenas.backgroundmusic.activities.t:
+    com.zenas.backgroundmusic.activities.MainActivity this$0 -> a
+    android.widget.Button val$colorB -> b
+    void onClick(android.view.View) -> onClick
+    com.zenas.backgroundmusic.activities.MainActivity access$0(com.zenas.backgroundmusic.activities.MainActivity$14) -> a
+com.zenas.backgroundmusic.activities.MainActivity$14$1 -> com.zenas.backgroundmusic.activities.u:
+    com.zenas.backgroundmusic.activities.MainActivity$14 this$1 -> a
+    android.widget.Button val$colorB -> b
+    void onColorSelected(int) -> a
+com.zenas.backgroundmusic.activities.MainActivity$15 -> com.zenas.backgroundmusic.activities.v:
+    com.zenas.backgroundmusic.activities.MainActivity this$0 -> a
+    java.util.List val$songs -> b
+    void onClick(android.view.View) -> onClick
+    com.zenas.backgroundmusic.activities.MainActivity access$0(com.zenas.backgroundmusic.activities.MainActivity$15) -> a
+com.zenas.backgroundmusic.activities.MainActivity$15$1 -> com.zenas.backgroundmusic.activities.w:
+    com.zenas.backgroundmusic.activities.MainActivity$15 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.zenas.backgroundmusic.activities.MainActivity$15$2 -> com.zenas.backgroundmusic.activities.x:
+    com.zenas.backgroundmusic.activities.MainActivity$15 this$1 -> a
+    java.util.List val$songs -> b
+    android.app.AlertDialog val$alertDialog -> c
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+com.zenas.backgroundmusic.activities.MainActivity$16 -> com.zenas.backgroundmusic.activities.y:
+    com.zenas.backgroundmusic.activities.MainActivity this$0 -> a
+    java.util.List val$songs -> b
+    void onClick(android.view.View) -> onClick
+    com.zenas.backgroundmusic.activities.MainActivity access$0(com.zenas.backgroundmusic.activities.MainActivity$16) -> a
+com.zenas.backgroundmusic.activities.MainActivity$16$1 -> com.zenas.backgroundmusic.activities.z:
+    com.zenas.backgroundmusic.activities.MainActivity$16 this$1 -> a
+    android.widget.ListView val$lv -> b
+    com.zenas.backgroundmusic.util.ListAdapter val$listOfSongs -> c
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+com.zenas.backgroundmusic.activities.MainActivity$16$2 -> com.zenas.backgroundmusic.activities.aa:
+    com.zenas.backgroundmusic.activities.MainActivity$16 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.zenas.backgroundmusic.activities.MainActivity$16$3 -> com.zenas.backgroundmusic.activities.ab:
+    com.zenas.backgroundmusic.activities.MainActivity$16 this$1 -> a
+    java.util.List val$songs -> b
+    android.widget.ListView val$lv -> c
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.zenas.backgroundmusic.activities.MainActivity$16$4 -> com.zenas.backgroundmusic.activities.ac:
+    com.zenas.backgroundmusic.activities.MainActivity$16 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.zenas.backgroundmusic.activities.MainActivity$16$5 -> com.zenas.backgroundmusic.activities.ad:
+    com.zenas.backgroundmusic.activities.MainActivity$16 this$1 -> a
+    android.widget.ListView val$lv -> b
+    com.zenas.backgroundmusic.util.ListAdapter val$listOfSongs -> c
+    void onClick(android.view.View) -> onClick
+com.zenas.backgroundmusic.activities.MainActivity$17 -> com.zenas.backgroundmusic.activities.ae:
+    com.zenas.backgroundmusic.activities.MainActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.zenas.backgroundmusic.activities.MainActivity$18 -> com.zenas.backgroundmusic.activities.af:
+    com.zenas.backgroundmusic.activities.MainActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.zenas.backgroundmusic.activities.MainActivity$19 -> com.zenas.backgroundmusic.activities.ag:
+    com.zenas.backgroundmusic.activities.MainActivity this$0 -> a
+    void directorySelected(java.util.List) -> a
+com.zenas.backgroundmusic.activities.MainActivity$2 -> com.zenas.backgroundmusic.activities.ah:
+    com.zenas.backgroundmusic.activities.MainActivity this$0 -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+com.zenas.backgroundmusic.activities.MainActivity$3 -> com.zenas.backgroundmusic.activities.ai:
+    com.zenas.backgroundmusic.activities.MainActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.zenas.backgroundmusic.activities.MainActivity$4 -> com.zenas.backgroundmusic.activities.aj:
+    com.zenas.backgroundmusic.activities.MainActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.zenas.backgroundmusic.activities.MainActivity$5 -> com.zenas.backgroundmusic.activities.ak:
+    com.zenas.backgroundmusic.activities.MainActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.zenas.backgroundmusic.activities.MainActivity$6 -> com.zenas.backgroundmusic.activities.al:
+    com.zenas.backgroundmusic.activities.MainActivity this$0 -> a
+    void completed() -> a
+    com.zenas.backgroundmusic.activities.MainActivity access$0(com.zenas.backgroundmusic.activities.MainActivity$6) -> a
+com.zenas.backgroundmusic.activities.MainActivity$6$1 -> com.zenas.backgroundmusic.activities.am:
+    com.zenas.backgroundmusic.activities.MainActivity$6 this$1 -> a
+    void yes() -> a
+    com.zenas.backgroundmusic.activities.MainActivity$6 access$0(com.zenas.backgroundmusic.activities.MainActivity$6$1) -> a
+com.zenas.backgroundmusic.activities.MainActivity$6$1$1 -> com.zenas.backgroundmusic.activities.an:
+    com.zenas.backgroundmusic.activities.MainActivity$6$1 this$2 -> a
+    void completed() -> a
+com.zenas.backgroundmusic.activities.MainActivity$6$2 -> com.zenas.backgroundmusic.activities.ao:
+    com.zenas.backgroundmusic.activities.MainActivity$6 this$1 -> a
+    void no() -> a
+com.zenas.backgroundmusic.activities.MainActivity$7 -> com.zenas.backgroundmusic.activities.ap:
+    com.zenas.backgroundmusic.activities.MainActivity this$0 -> a
+    android.widget.EditText val$userInput -> b
+    java.util.List val$songs -> c
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.zenas.backgroundmusic.activities.MainActivity$8 -> com.zenas.backgroundmusic.activities.aq:
+    com.zenas.backgroundmusic.activities.MainActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.zenas.backgroundmusic.activities.MainActivity$9 -> com.zenas.backgroundmusic.activities.ar:
+    com.zenas.backgroundmusic.activities.MainActivity this$0 -> a
+    android.widget.Button val$colorB -> b
+    void onClick(android.view.View) -> onClick
+    com.zenas.backgroundmusic.activities.MainActivity access$0(com.zenas.backgroundmusic.activities.MainActivity$9) -> a
+com.zenas.backgroundmusic.activities.MainActivity$9$1 -> com.zenas.backgroundmusic.activities.as:
+    com.zenas.backgroundmusic.activities.MainActivity$9 this$1 -> a
+    android.widget.Button val$colorB -> b
+    void onColorSelected(int) -> a
+com.zenas.backgroundmusic.activities.Mp3Filter -> com.zenas.backgroundmusic.activities.at:
+    boolean accept(java.io.File,java.lang.String) -> accept
+com.zenas.backgroundmusic.activities.PlaylistActivity -> com.zenas.backgroundmusic.activities.PlaylistActivity:
+    java.util.List playlists -> b
+    java.util.List playlists_songNames -> c
+    java.util.List playlistNames -> d
+    java.util.List playlistColors -> e
+    int currentPlaylist -> f
+    int currentSong -> g
+    android.content.Context context -> a
+    android.widget.TextView tv -> h
+    android.widget.TextView songName -> i
+    android.widget.TextView songPositionText -> j
+    android.widget.TextView songMaxText -> k
+    android.widget.ListView list -> l
+    android.widget.SeekBar sb -> m
+    android.widget.FrameLayout frame -> n
+    android.widget.Button moveUpBtn -> o
+    android.widget.Button moveDownBtn -> p
+    android.widget.Button doneBtn -> q
+    int tempColor -> r
+    boolean shuffle -> s
+    boolean autoplay -> t
+    float volume -> u
+    com.zenas.backgroundmusic.activities.PlaylistActivity pa -> v
+    int song_position -> w
+    com.zenas.backgroundmusic.util.PreferenceUtils tinydb -> x
+    int selectedSong -> y
+    int selectedColor -> z
+    android.widget.Button stopBtn -> A
+    android.widget.Button prev -> B
+    android.widget.Button next -> C
+    android.widget.Button shuff -> D
+    android.widget.Button back -> E
+    android.widget.Button settingsButton -> F
+    boolean play -> G
+    java.lang.Runnable playlistRunnable -> H
+    android.os.Handler playlistHandler -> I
+    android.widget.ImageView iv -> J
+    android.widget.ImageView coverart -> K
+    boolean locked -> L
+    android.widget.Button lockBtn -> M
+    boolean shouldAutoplay -> N
+    boolean hideHelp -> O
+    android.widget.Button helpBtn -> P
+    boolean stopOnExit -> Q
+    boolean exiting -> R
+    android.widget.Toast mToast -> S
+    java.util.List playlistColorsMinusCurrent -> T
+    java.util.List nameMinusCurrent -> U
+    java.util.List directories -> V
+    void onResume() -> onResume
+    void onCreate(android.os.Bundle) -> onCreate
+    void onPause() -> onPause
+    void playRandomSong() -> a
+    void playNextSong() -> b
+    void playPrevSong() -> c
+    void setVolume(float) -> a
+    int randInt(int,int) -> a
+    void editPlaylistDialog(int) -> a
+    void setSelector(int) -> b
+    void playSong(int) -> c
+    void playSong(int,int) -> b
+    void loadSong(int,int) -> c
+    void updateSongText(int,int) -> d
+    void showCoverart(int,int) -> e
+    void selectPlaylist(int) -> d
+    void refreshColor(int) -> e
+    void addSongToList(int,java.lang.String,boolean) -> a
+    void sortSongsAlphabetically(int) -> f
+    java.lang.String getNameFromPath(java.lang.String) -> a
+    java.lang.String getNameFromFile(java.lang.String) -> b
+    java.lang.String getFileFromPath(java.lang.String) -> c
+    void showError(java.lang.String) -> d
+    void swapSongIndexes(int,int) -> f
+    void updateSongList(android.widget.ListView) -> a
+    void moveSongDown(int) -> g
+    void moveSongUp(int) -> h
+    void playlists_putPref() -> d
+    void playlistsSongNames_putPref() -> e
+    void playlistNames_putPref() -> f
+    void playlistColors_putPref() -> g
+    void directories_getPref() -> h
+    java.lang.String intToTime(long) -> a
+    void onBackPressed() -> onBackPressed
+    void settleDifferences() -> i
+    java.util.List lookForMissingFiles(java.util.List) -> a
+    java.util.List lookForNewFiles(java.util.List) -> b
+    void differencesDialog(boolean,java.util.List) -> a
+    boolean access$0(com.zenas.backgroundmusic.activities.PlaylistActivity) -> a
+    int access$1(com.zenas.backgroundmusic.activities.PlaylistActivity) -> b
+    void access$2(com.zenas.backgroundmusic.activities.PlaylistActivity,int) -> a
+    void access$3(com.zenas.backgroundmusic.activities.PlaylistActivity,int) -> b
+    android.widget.Button access$4(com.zenas.backgroundmusic.activities.PlaylistActivity) -> c
+    android.widget.Button access$5(com.zenas.backgroundmusic.activities.PlaylistActivity) -> d
+    android.widget.Button access$6(com.zenas.backgroundmusic.activities.PlaylistActivity) -> e
+    void access$7(com.zenas.backgroundmusic.activities.PlaylistActivity) -> f
+    void access$8(com.zenas.backgroundmusic.activities.PlaylistActivity) -> g
+    int access$9(com.zenas.backgroundmusic.activities.PlaylistActivity) -> h
+    void access$10(com.zenas.backgroundmusic.activities.PlaylistActivity,int) -> c
+    void access$11(com.zenas.backgroundmusic.activities.PlaylistActivity,int) -> d
+    com.zenas.backgroundmusic.activities.PlaylistActivity access$12(com.zenas.backgroundmusic.activities.PlaylistActivity) -> i
+    java.util.List access$13(com.zenas.backgroundmusic.activities.PlaylistActivity) -> j
+    java.util.List access$14(com.zenas.backgroundmusic.activities.PlaylistActivity) -> k
+    java.util.List access$15(com.zenas.backgroundmusic.activities.PlaylistActivity) -> l
+    java.util.List access$16(com.zenas.backgroundmusic.activities.PlaylistActivity) -> m
+    int access$17(com.zenas.backgroundmusic.activities.PlaylistActivity) -> n
+    boolean access$18(com.zenas.backgroundmusic.activities.PlaylistActivity) -> o
+    void access$19(com.zenas.backgroundmusic.activities.PlaylistActivity,boolean) -> a
+    void access$20(com.zenas.backgroundmusic.activities.PlaylistActivity,java.util.List) -> a
+    java.util.List access$21(com.zenas.backgroundmusic.activities.PlaylistActivity) -> p
+    void access$22(com.zenas.backgroundmusic.activities.PlaylistActivity,java.util.List) -> b
+    java.util.List access$23(com.zenas.backgroundmusic.activities.PlaylistActivity) -> q
+    void access$24(com.zenas.backgroundmusic.activities.PlaylistActivity,int) -> e
+    void access$25(com.zenas.backgroundmusic.activities.PlaylistActivity,int,java.lang.String,boolean) -> a
+    android.widget.ListView access$26(com.zenas.backgroundmusic.activities.PlaylistActivity) -> r
+    void access$27(com.zenas.backgroundmusic.activities.PlaylistActivity,int,int) -> a
+    android.widget.TextView access$28(com.zenas.backgroundmusic.activities.PlaylistActivity) -> s
+    android.widget.SeekBar access$29(com.zenas.backgroundmusic.activities.PlaylistActivity) -> t
+    void access$30(com.zenas.backgroundmusic.activities.PlaylistActivity,int) -> f
+    void access$31(com.zenas.backgroundmusic.activities.PlaylistActivity,int) -> g
+    void access$32(com.zenas.backgroundmusic.activities.PlaylistActivity,int) -> h
+    void access$33(com.zenas.backgroundmusic.activities.PlaylistActivity,boolean) -> b
+    void access$34(com.zenas.backgroundmusic.activities.PlaylistActivity,int) -> i
+    void access$35(com.zenas.backgroundmusic.activities.PlaylistActivity,int,int) -> b
+    void access$36(com.zenas.backgroundmusic.activities.PlaylistActivity,int) -> j
+    android.widget.TextView access$37(com.zenas.backgroundmusic.activities.PlaylistActivity) -> u
+    java.lang.String access$38(com.zenas.backgroundmusic.activities.PlaylistActivity,long) -> a
+    android.widget.Toast access$39(com.zenas.backgroundmusic.activities.PlaylistActivity) -> v
+    void access$40(com.zenas.backgroundmusic.activities.PlaylistActivity,android.widget.Toast) -> a
+    void access$41(com.zenas.backgroundmusic.activities.PlaylistActivity,boolean) -> c
+    android.widget.Button access$42(com.zenas.backgroundmusic.activities.PlaylistActivity) -> w
+    int access$43(com.zenas.backgroundmusic.activities.PlaylistActivity) -> x
+    android.widget.ImageView access$44(com.zenas.backgroundmusic.activities.PlaylistActivity) -> y
+    void access$45(com.zenas.backgroundmusic.activities.PlaylistActivity,int,int) -> c
+    void access$46(com.zenas.backgroundmusic.activities.PlaylistActivity,int) -> k
+    void access$47(com.zenas.backgroundmusic.activities.PlaylistActivity,boolean) -> d
+    android.widget.Button access$48(com.zenas.backgroundmusic.activities.PlaylistActivity) -> z
+    void access$49(com.zenas.backgroundmusic.activities.PlaylistActivity,float) -> a
+    float access$50(com.zenas.backgroundmusic.activities.PlaylistActivity) -> A
+    android.os.Handler access$51(com.zenas.backgroundmusic.activities.PlaylistActivity) -> B
+    void access$52(com.zenas.backgroundmusic.activities.PlaylistActivity) -> C
+    void access$53(com.zenas.backgroundmusic.activities.PlaylistActivity,java.lang.String) -> a
+    int access$54(com.zenas.backgroundmusic.activities.PlaylistActivity) -> D
+    void access$55(com.zenas.backgroundmusic.activities.PlaylistActivity) -> E
+    android.widget.TextView access$56(com.zenas.backgroundmusic.activities.PlaylistActivity) -> F
+    void access$57(com.zenas.backgroundmusic.activities.PlaylistActivity,android.widget.ListView) -> a
+    void access$58(com.zenas.backgroundmusic.activities.PlaylistActivity,int) -> l
+    void access$59(com.zenas.backgroundmusic.activities.PlaylistActivity,int) -> m
+com.zenas.backgroundmusic.activities.PlaylistActivity$1 -> com.zenas.backgroundmusic.activities.au:
+    com.zenas.backgroundmusic.activities.PlaylistActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+    com.zenas.backgroundmusic.activities.PlaylistActivity access$0(com.zenas.backgroundmusic.activities.PlaylistActivity$1) -> a
+com.zenas.backgroundmusic.activities.PlaylistActivity$1$1 -> com.zenas.backgroundmusic.activities.av:
+    com.zenas.backgroundmusic.activities.PlaylistActivity$1 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.zenas.backgroundmusic.activities.PlaylistActivity$1$2 -> com.zenas.backgroundmusic.activities.aw:
+    com.zenas.backgroundmusic.activities.PlaylistActivity$1 this$1 -> a
+    android.app.AlertDialog val$alertDialog -> b
+    void onClick(android.view.View) -> onClick
+com.zenas.backgroundmusic.activities.PlaylistActivity$1$3 -> com.zenas.backgroundmusic.activities.ax:
+    com.zenas.backgroundmusic.activities.PlaylistActivity$1 this$1 -> a
+    android.app.AlertDialog val$alertDialog -> b
+    void onClick(android.view.View) -> onClick
+com.zenas.backgroundmusic.activities.PlaylistActivity$1$4 -> com.zenas.backgroundmusic.activities.ay:
+    com.zenas.backgroundmusic.activities.PlaylistActivity$1 this$1 -> a
+    android.app.AlertDialog val$alertDialog -> b
+    void onClick(android.view.View) -> onClick
+com.zenas.backgroundmusic.activities.PlaylistActivity$10 -> com.zenas.backgroundmusic.activities.az:
+    com.zenas.backgroundmusic.activities.PlaylistActivity this$0 -> a
+    boolean onItemLongClick(android.widget.AdapterView,android.view.View,int,long) -> onItemLongClick
+    com.zenas.backgroundmusic.activities.PlaylistActivity access$0(com.zenas.backgroundmusic.activities.PlaylistActivity$10) -> a
+com.zenas.backgroundmusic.activities.PlaylistActivity$10$1 -> com.zenas.backgroundmusic.activities.ba:
+    com.zenas.backgroundmusic.activities.PlaylistActivity$10 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.zenas.backgroundmusic.activities.PlaylistActivity$10$2 -> com.zenas.backgroundmusic.activities.bb:
+    com.zenas.backgroundmusic.activities.PlaylistActivity$10 this$1 -> a
+    android.app.AlertDialog val$alertDialog -> b
+    void onClick(android.view.View) -> onClick
+    com.zenas.backgroundmusic.activities.PlaylistActivity$10 access$0(com.zenas.backgroundmusic.activities.PlaylistActivity$10$2) -> a
+com.zenas.backgroundmusic.activities.PlaylistActivity$10$2$1 -> com.zenas.backgroundmusic.activities.bc:
+    com.zenas.backgroundmusic.activities.PlaylistActivity$10$2 this$2 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.zenas.backgroundmusic.activities.PlaylistActivity$10$2$2 -> com.zenas.backgroundmusic.activities.bd:
+    com.zenas.backgroundmusic.activities.PlaylistActivity$10$2 this$2 -> a
+    android.app.AlertDialog val$alertDialog2 -> b
+    android.app.AlertDialog val$alertDialog -> c
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+com.zenas.backgroundmusic.activities.PlaylistActivity$10$3 -> com.zenas.backgroundmusic.activities.be:
+    com.zenas.backgroundmusic.activities.PlaylistActivity$10 this$1 -> a
+    android.app.AlertDialog val$alertDialog -> b
+    void onClick(android.view.View) -> onClick
+com.zenas.backgroundmusic.activities.PlaylistActivity$10$4 -> com.zenas.backgroundmusic.activities.bf:
+    com.zenas.backgroundmusic.activities.PlaylistActivity$10 this$1 -> a
+    int val$song_position -> b
+    android.app.AlertDialog val$alertDialog -> c
+    void onClick(android.view.View) -> onClick
+com.zenas.backgroundmusic.activities.PlaylistActivity$11 -> com.zenas.backgroundmusic.activities.bg:
+    com.zenas.backgroundmusic.activities.PlaylistActivity this$0 -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+com.zenas.backgroundmusic.activities.PlaylistActivity$12 -> com.zenas.backgroundmusic.activities.bh:
+    com.zenas.backgroundmusic.activities.PlaylistActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.zenas.backgroundmusic.activities.PlaylistActivity$13 -> com.zenas.backgroundmusic.activities.bi:
+    com.zenas.backgroundmusic.activities.PlaylistActivity this$0 -> a
+    void onProgressChanged(android.widget.SeekBar,int,boolean) -> onProgressChanged
+    void onStartTrackingTouch(android.widget.SeekBar) -> onStartTrackingTouch
+    void onStopTrackingTouch(android.widget.SeekBar) -> onStopTrackingTouch
+com.zenas.backgroundmusic.activities.PlaylistActivity$14 -> com.zenas.backgroundmusic.activities.bj:
+    com.zenas.backgroundmusic.activities.PlaylistActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.zenas.backgroundmusic.activities.PlaylistActivity$15 -> com.zenas.backgroundmusic.activities.bk:
+    com.zenas.backgroundmusic.activities.PlaylistActivity this$0 -> a
+    void run() -> run
+com.zenas.backgroundmusic.activities.PlaylistActivity$16 -> com.zenas.backgroundmusic.activities.bl:
+    com.zenas.backgroundmusic.activities.PlaylistActivity this$0 -> a
+    android.widget.EditText val$userInput -> b
+    int val$index -> c
+    java.util.List val$songs -> d
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.zenas.backgroundmusic.activities.PlaylistActivity$17 -> com.zenas.backgroundmusic.activities.bm:
+    com.zenas.backgroundmusic.activities.PlaylistActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.zenas.backgroundmusic.activities.PlaylistActivity$18 -> com.zenas.backgroundmusic.activities.bn:
+    com.zenas.backgroundmusic.activities.PlaylistActivity this$0 -> a
+    android.widget.Button val$colorB -> b
+    void onClick(android.view.View) -> onClick
+    com.zenas.backgroundmusic.activities.PlaylistActivity access$0(com.zenas.backgroundmusic.activities.PlaylistActivity$18) -> a
+com.zenas.backgroundmusic.activities.PlaylistActivity$18$1 -> com.zenas.backgroundmusic.activities.bo:
+    com.zenas.backgroundmusic.activities.PlaylistActivity$18 this$1 -> a
+    android.widget.Button val$colorB -> b
+    void onColorSelected(int) -> a
+com.zenas.backgroundmusic.activities.PlaylistActivity$19 -> com.zenas.backgroundmusic.activities.bp:
+    com.zenas.backgroundmusic.activities.PlaylistActivity this$0 -> a
+    int val$index -> b
+    java.util.List val$songs -> c
+    void onClick(android.view.View) -> onClick
+    com.zenas.backgroundmusic.activities.PlaylistActivity access$0(com.zenas.backgroundmusic.activities.PlaylistActivity$19) -> a
+com.zenas.backgroundmusic.activities.PlaylistActivity$19$1 -> com.zenas.backgroundmusic.activities.bq:
+    com.zenas.backgroundmusic.activities.PlaylistActivity$19 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.zenas.backgroundmusic.activities.PlaylistActivity$19$2 -> com.zenas.backgroundmusic.activities.br:
+    com.zenas.backgroundmusic.activities.PlaylistActivity$19 this$1 -> a
+    int val$index -> b
+    java.util.List val$songs -> c
+    android.app.AlertDialog val$alertDialog -> d
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+com.zenas.backgroundmusic.activities.PlaylistActivity$2 -> com.zenas.backgroundmusic.activities.bs:
+    com.zenas.backgroundmusic.activities.PlaylistActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.zenas.backgroundmusic.activities.PlaylistActivity$20 -> com.zenas.backgroundmusic.activities.bt:
+    com.zenas.backgroundmusic.activities.PlaylistActivity this$0 -> a
+    java.util.List val$songs -> b
+    void onClick(android.view.View) -> onClick
+    com.zenas.backgroundmusic.activities.PlaylistActivity access$0(com.zenas.backgroundmusic.activities.PlaylistActivity$20) -> a
+com.zenas.backgroundmusic.activities.PlaylistActivity$20$1 -> com.zenas.backgroundmusic.activities.bu:
+    com.zenas.backgroundmusic.activities.PlaylistActivity$20 this$1 -> a
+    android.widget.ListView val$lv -> b
+    com.zenas.backgroundmusic.util.ListAdapter val$listOfSongs -> c
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+com.zenas.backgroundmusic.activities.PlaylistActivity$20$2 -> com.zenas.backgroundmusic.activities.bv:
+    com.zenas.backgroundmusic.activities.PlaylistActivity$20 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.zenas.backgroundmusic.activities.PlaylistActivity$20$3 -> com.zenas.backgroundmusic.activities.bw:
+    com.zenas.backgroundmusic.activities.PlaylistActivity$20 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.zenas.backgroundmusic.activities.PlaylistActivity$20$4 -> com.zenas.backgroundmusic.activities.bx:
+    com.zenas.backgroundmusic.activities.PlaylistActivity$20 this$1 -> a
+    java.util.List val$songs -> b
+    android.widget.ListView val$lv -> c
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.zenas.backgroundmusic.activities.PlaylistActivity$20$5 -> com.zenas.backgroundmusic.activities.by:
+    com.zenas.backgroundmusic.activities.PlaylistActivity$20 this$1 -> a
+    android.widget.ListView val$lv -> b
+    com.zenas.backgroundmusic.util.ListAdapter val$listOfSongs -> c
+    void onClick(android.view.View) -> onClick
+com.zenas.backgroundmusic.activities.PlaylistActivity$21 -> com.zenas.backgroundmusic.activities.bz:
+    com.zenas.backgroundmusic.activities.PlaylistActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.zenas.backgroundmusic.activities.PlaylistActivity$22 -> com.zenas.backgroundmusic.activities.ca:
+    com.zenas.backgroundmusic.activities.PlaylistActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.zenas.backgroundmusic.activities.PlaylistActivity$3 -> com.zenas.backgroundmusic.activities.cb:
+    com.zenas.backgroundmusic.activities.PlaylistActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.zenas.backgroundmusic.activities.PlaylistActivity$4 -> com.zenas.backgroundmusic.activities.cc:
+    com.zenas.backgroundmusic.activities.PlaylistActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.zenas.backgroundmusic.activities.PlaylistActivity$5 -> com.zenas.backgroundmusic.activities.cd:
+    com.zenas.backgroundmusic.activities.PlaylistActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.zenas.backgroundmusic.activities.PlaylistActivity$6 -> com.zenas.backgroundmusic.activities.ce:
+    com.zenas.backgroundmusic.activities.PlaylistActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.zenas.backgroundmusic.activities.PlaylistActivity$7 -> com.zenas.backgroundmusic.activities.cf:
+    com.zenas.backgroundmusic.activities.PlaylistActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.zenas.backgroundmusic.activities.PlaylistActivity$8 -> com.zenas.backgroundmusic.activities.cg:
+    com.zenas.backgroundmusic.activities.PlaylistActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.zenas.backgroundmusic.activities.PlaylistActivity$9 -> com.zenas.backgroundmusic.activities.ch:
+    com.zenas.backgroundmusic.activities.PlaylistActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.zenas.backgroundmusic.activities.SettingsActivity -> com.zenas.backgroundmusic.activities.SettingsActivity:
+    boolean initial_shuffle -> a
+    boolean new_shuffle -> b
+    boolean initial_autoplay -> c
+    boolean new_autoplay -> d
+    float initial_volume -> e
+    float new_volume -> f
+    android.app.Activity sa -> g
+    android.content.Context context -> h
+    com.zenas.backgroundmusic.util.PreferenceUtils tinydb -> i
+    java.util.List directories -> j
+    java.lang.String SD_PATH -> k
+    java.lang.String initial_wallpaper_path -> l
+    java.lang.String new_wallpaper_path -> m
+    boolean initial_wallpaper_notStretched -> n
+    boolean new_wallpaper_notStretched -> o
+    boolean initial_hideHelp -> p
+    boolean new_hideHelp -> q
+    boolean initial_stopOnExit -> r
+    boolean new_stopOnExit -> s
+    android.widget.TabHost tabHost -> t
+    android.graphics.Bitmap myBitmap -> u
+    android.widget.ListView lv -> v
+    android.widget.Button helpBtn -> w
+    void onPause() -> onPause
+    void onCreate(android.os.Bundle) -> onCreate
+    void updateDirList() -> b
+    void volume_putPref() -> c
+    void shuffle_putPref() -> d
+    void autoplay_putPref() -> e
+    void directories_putPref() -> f
+    void wallpaperPath_putPref() -> g
+    void wallpaperNotStretched_putPref() -> h
+    void hideHelp_putPref() -> i
+    void stopOnExit_putPref() -> j
+    void showDirectoryDialog() -> a
+    void showFileDialog(java.util.List) -> a
+    int calculateInSampleSize(android.graphics.BitmapFactory$Options,int,int) -> a
+    android.graphics.Bitmap decodeSampledBitmap(java.io.File,int,int) -> a
+    boolean access$0(com.zenas.backgroundmusic.activities.SettingsActivity) -> a
+    void access$1(com.zenas.backgroundmusic.activities.SettingsActivity,boolean) -> a
+    boolean access$2(com.zenas.backgroundmusic.activities.SettingsActivity) -> b
+    void access$3(com.zenas.backgroundmusic.activities.SettingsActivity,boolean) -> b
+    void access$4(com.zenas.backgroundmusic.activities.SettingsActivity,java.lang.String) -> a
+    android.widget.TabHost access$5(com.zenas.backgroundmusic.activities.SettingsActivity) -> c
+    boolean access$6(com.zenas.backgroundmusic.activities.SettingsActivity) -> d
+    java.lang.String access$7(com.zenas.backgroundmusic.activities.SettingsActivity) -> e
+    void access$8(com.zenas.backgroundmusic.activities.SettingsActivity,android.graphics.Bitmap) -> a
+    android.graphics.Bitmap access$9(com.zenas.backgroundmusic.activities.SettingsActivity) -> f
+    void access$10(com.zenas.backgroundmusic.activities.SettingsActivity,boolean) -> c
+    float access$11(com.zenas.backgroundmusic.activities.SettingsActivity) -> g
+    void access$12(com.zenas.backgroundmusic.activities.SettingsActivity,float) -> a
+    android.app.Activity access$13(com.zenas.backgroundmusic.activities.SettingsActivity) -> h
+    boolean access$14(com.zenas.backgroundmusic.activities.SettingsActivity) -> i
+    void access$15(com.zenas.backgroundmusic.activities.SettingsActivity,boolean) -> d
+    void access$16(com.zenas.backgroundmusic.activities.SettingsActivity,android.widget.ListView) -> a
+    void access$17(com.zenas.backgroundmusic.activities.SettingsActivity) -> j
+    boolean access$18(com.zenas.backgroundmusic.activities.SettingsActivity) -> k
+    void access$19(com.zenas.backgroundmusic.activities.SettingsActivity,boolean) -> e
+    android.widget.Button access$20(com.zenas.backgroundmusic.activities.SettingsActivity) -> l
+    android.content.Context access$21(com.zenas.backgroundmusic.activities.SettingsActivity) -> m
+    void access$22(com.zenas.backgroundmusic.activities.SettingsActivity) -> n
+    void access$23(com.zenas.backgroundmusic.activities.SettingsActivity) -> o
+    void access$24(com.zenas.backgroundmusic.activities.SettingsActivity) -> p
+    void access$25(com.zenas.backgroundmusic.activities.SettingsActivity) -> q
+    void access$26(com.zenas.backgroundmusic.activities.SettingsActivity) -> r
+    void access$27(com.zenas.backgroundmusic.activities.SettingsActivity) -> s
+    void access$28(com.zenas.backgroundmusic.activities.SettingsActivity) -> t
+    void access$29(com.zenas.backgroundmusic.activities.SettingsActivity) -> u
+    float access$30(com.zenas.backgroundmusic.activities.SettingsActivity) -> v
+    boolean access$31(com.zenas.backgroundmusic.activities.SettingsActivity) -> w
+    boolean access$32(com.zenas.backgroundmusic.activities.SettingsActivity) -> x
+    java.lang.String access$33(com.zenas.backgroundmusic.activities.SettingsActivity) -> y
+    boolean access$34(com.zenas.backgroundmusic.activities.SettingsActivity) -> z
+    boolean access$35(com.zenas.backgroundmusic.activities.SettingsActivity) -> A
+    boolean access$36(com.zenas.backgroundmusic.activities.SettingsActivity) -> B
+    void access$37(com.zenas.backgroundmusic.activities.SettingsActivity,java.util.List) -> a
+    java.util.List access$38(com.zenas.backgroundmusic.activities.SettingsActivity) -> C
+com.zenas.backgroundmusic.activities.SettingsActivity$1 -> com.zenas.backgroundmusic.activities.ci:
+    com.zenas.backgroundmusic.activities.SettingsActivity this$0 -> a
+    void onTabChanged(java.lang.String) -> onTabChanged
+    com.zenas.backgroundmusic.activities.SettingsActivity access$0(com.zenas.backgroundmusic.activities.SettingsActivity$1) -> a
+com.zenas.backgroundmusic.activities.SettingsActivity$1$1 -> com.zenas.backgroundmusic.activities.cj:
+    com.zenas.backgroundmusic.activities.SettingsActivity$1 this$1 -> a
+    void onCheckedChanged(android.widget.CompoundButton,boolean) -> onCheckedChanged
+com.zenas.backgroundmusic.activities.SettingsActivity$1$2 -> com.zenas.backgroundmusic.activities.ck:
+    com.zenas.backgroundmusic.activities.SettingsActivity$1 this$1 -> a
+    void onCheckedChanged(android.widget.CompoundButton,boolean) -> onCheckedChanged
+com.zenas.backgroundmusic.activities.SettingsActivity$1$3 -> com.zenas.backgroundmusic.activities.cl:
+    com.zenas.backgroundmusic.activities.SettingsActivity$1 this$1 -> a
+    void onClick(android.view.View) -> onClick
+com.zenas.backgroundmusic.activities.SettingsActivity$1$4 -> com.zenas.backgroundmusic.activities.cm:
+    com.zenas.backgroundmusic.activities.SettingsActivity$1 this$1 -> a
+    void onClick(android.view.View) -> onClick
+com.zenas.backgroundmusic.activities.SettingsActivity$1$5 -> com.zenas.backgroundmusic.activities.cn:
+    com.zenas.backgroundmusic.activities.SettingsActivity$1 this$1 -> a
+    android.widget.ImageView val$wallpaperPreview -> b
+    void onCheckedChanged(android.widget.CompoundButton,boolean) -> onCheckedChanged
+com.zenas.backgroundmusic.activities.SettingsActivity$1$6 -> com.zenas.backgroundmusic.activities.co:
+    com.zenas.backgroundmusic.activities.SettingsActivity$1 this$1 -> a
+    void onProgressChanged(android.widget.SeekBar,int,boolean) -> onProgressChanged
+    void onStartTrackingTouch(android.widget.SeekBar) -> onStartTrackingTouch
+    void onStopTrackingTouch(android.widget.SeekBar) -> onStopTrackingTouch
+com.zenas.backgroundmusic.activities.SettingsActivity$1$7 -> com.zenas.backgroundmusic.activities.cp:
+    com.zenas.backgroundmusic.activities.SettingsActivity$1 this$1 -> a
+    void onCheckedChanged(android.widget.CompoundButton,boolean) -> onCheckedChanged
+com.zenas.backgroundmusic.activities.SettingsActivity$1$8 -> com.zenas.backgroundmusic.activities.cq:
+    com.zenas.backgroundmusic.activities.SettingsActivity$1 this$1 -> a
+    void onClick(android.view.View) -> onClick
+com.zenas.backgroundmusic.activities.SettingsActivity$1$9 -> com.zenas.backgroundmusic.activities.cr:
+    com.zenas.backgroundmusic.activities.SettingsActivity$1 this$1 -> a
+    void onCheckedChanged(android.widget.CompoundButton,boolean) -> onCheckedChanged
+com.zenas.backgroundmusic.activities.SettingsActivity$2 -> com.zenas.backgroundmusic.activities.cs:
+    com.zenas.backgroundmusic.activities.SettingsActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.zenas.backgroundmusic.activities.SettingsActivity$3 -> com.zenas.backgroundmusic.activities.ct:
+    com.zenas.backgroundmusic.activities.SettingsActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+    com.zenas.backgroundmusic.activities.SettingsActivity access$0(com.zenas.backgroundmusic.activities.SettingsActivity$3) -> a
+com.zenas.backgroundmusic.activities.SettingsActivity$3$1 -> com.zenas.backgroundmusic.activities.cu:
+    com.zenas.backgroundmusic.activities.SettingsActivity$3 this$1 -> a
+    void completed() -> a
+com.zenas.backgroundmusic.activities.SettingsActivity$4 -> com.zenas.backgroundmusic.activities.cv:
+    com.zenas.backgroundmusic.activities.SettingsActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.zenas.backgroundmusic.activities.SettingsActivity$5 -> com.zenas.backgroundmusic.activities.cw:
+    com.zenas.backgroundmusic.activities.SettingsActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.zenas.backgroundmusic.activities.SettingsActivity$6 -> com.zenas.backgroundmusic.activities.cx:
+    com.zenas.backgroundmusic.activities.SettingsActivity this$0 -> a
+    void directorySelected(java.util.List) -> a
+com.zenas.backgroundmusic.activities.SettingsActivity$7 -> com.zenas.backgroundmusic.activities.cy:
+    com.zenas.backgroundmusic.activities.SettingsActivity this$0 -> a
+    void fileSelected(java.io.File) -> a
+com.zenas.backgroundmusic.util.ColorPicker -> com.zenas.backgroundmusic.a.a:
+    int paramOuterPadding -> a
+    int paramInnerPadding -> b
+    int paramValueSliderWidth -> c
+    int paramArrowPointerSize -> d
+    android.graphics.Paint colorWheelPaint -> e
+    android.graphics.Paint valueSliderPaint -> f
+    android.graphics.Paint colorViewPaint -> g
+    android.graphics.Paint colorPointerPaint -> h
+    android.graphics.RectF colorPointerCoords -> i
+    android.graphics.Paint valuePointerPaint -> j
+    android.graphics.Paint valuePointerArrowPaint -> k
+    android.graphics.RectF outerWheelRect -> l
+    android.graphics.RectF innerWheelRect -> m
+    android.graphics.Path colorViewPath -> n
+    android.graphics.Path valueSliderPath -> o
+    android.graphics.Path arrowPointerPath -> p
+    android.graphics.Bitmap colorWheelBitmap -> q
+    int valueSliderWidth -> r
+    int innerPadding -> s
+    int outerPadding -> t
+    int arrowPointerSize -> u
+    int outerWheelRadius -> v
+    int innerWheelRadius -> w
+    int colorWheelRadius -> x
+    android.graphics.Matrix gradientRotationMatrix -> y
+    float[] colorHSV -> z
+    void init() -> a
+    void onMeasure(int,int) -> onMeasure
+    void onDraw(android.graphics.Canvas) -> onDraw
+    void drawPointerArrow(android.graphics.Canvas) -> a
+    void onSizeChanged(int,int,int,int) -> onSizeChanged
+    android.graphics.Bitmap createColorWheelBitmap(int,int) -> a
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    void setColor(int) -> setColor
+    int getColor() -> getColor
+    android.os.Parcelable onSaveInstanceState() -> onSaveInstanceState
+    void onRestoreInstanceState(android.os.Parcelable) -> onRestoreInstanceState
+com.zenas.backgroundmusic.util.ColorPickerDialog -> com.zenas.backgroundmusic.a.b:
+    com.zenas.backgroundmusic.util.ColorPicker colorPickerView -> a
+    com.zenas.backgroundmusic.util.ColorPickerDialog$OnColorSelectedListener onColorSelectedListener -> b
+    android.content.DialogInterface$OnClickListener onClickListener -> c
+    com.zenas.backgroundmusic.util.ColorPicker access$0(com.zenas.backgroundmusic.util.ColorPickerDialog) -> a
+    com.zenas.backgroundmusic.util.ColorPickerDialog$OnColorSelectedListener access$1(com.zenas.backgroundmusic.util.ColorPickerDialog) -> b
+com.zenas.backgroundmusic.util.ColorPickerDialog$1 -> com.zenas.backgroundmusic.a.c:
+    com.zenas.backgroundmusic.util.ColorPickerDialog this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.zenas.backgroundmusic.util.ColorPickerDialog$OnColorSelectedListener -> com.zenas.backgroundmusic.a.d:
+    void onColorSelected(int) -> a
+com.zenas.backgroundmusic.util.ConcurrentSorter -> com.zenas.backgroundmusic.a.e:
+    void sort(java.util.List,java.util.List[]) -> a
+com.zenas.backgroundmusic.util.ConcurrentSorter$1 -> com.zenas.backgroundmusic.a.f:
+    java.util.List val$key -> a
+    int compare(java.lang.Integer,java.lang.Integer) -> a
+    int compare(java.lang.Object,java.lang.Object) -> compare
+com.zenas.backgroundmusic.util.ExpandableListAdapter -> com.zenas.backgroundmusic.a.g:
+    android.content.Context _context -> a
+    java.util.List _listDataHeader -> b
+    java.util.HashMap _listDataChild -> c
+    java.lang.Object getChild(int,int) -> getChild
+    long getChildId(int,int) -> getChildId
+    android.view.View getChildView(int,int,boolean,android.view.View,android.view.ViewGroup) -> getChildView
+    int getChildrenCount(int) -> getChildrenCount
+    java.lang.Object getGroup(int) -> getGroup
+    int getGroupCount() -> getGroupCount
+    long getGroupId(int) -> getGroupId
+    android.view.View getGroupView(int,boolean,android.view.View,android.view.ViewGroup) -> getGroupView
+    boolean hasStableIds() -> hasStableIds
+    boolean isChildSelectable(int,int) -> isChildSelectable
+com.zenas.backgroundmusic.util.FileAdapter -> com.zenas.backgroundmusic.a.h:
+    android.content.Context context -> a
+    java.util.List testList -> b
+    java.util.List selectedIndice -> c
+    int selectedColor -> d
+    int selectedTextColor -> e
+    int defaultTextColor -> f
+    boolean multiChoice -> g
+    boolean hideNumbers -> h
+    java.lang.String currentPath -> i
+    android.util.LruCache mMemoryCache -> j
+    java.util.List bitmaps -> k
+    java.util.List workingTasks -> l
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+    boolean isImage(java.lang.String) -> a
+    void updateAll() -> a
+    int calculateInSampleSize(android.graphics.BitmapFactory$Options,int,int) -> a
+    android.graphics.Bitmap decodeSampledBitmap(java.io.File,int,int) -> a
+    void addBitmapToMemoryCache(java.lang.String,android.graphics.Bitmap) -> a
+    android.graphics.Bitmap getBitmapFromMemCache(java.lang.String) -> b
+    void loadBitmap(java.io.File,int) -> a
+    void stopAllTasks() -> b
+    java.util.List access$0(com.zenas.backgroundmusic.util.FileAdapter) -> a
+com.zenas.backgroundmusic.util.FileAdapter$BitmapWorkerTask -> com.zenas.backgroundmusic.a.i:
+    int position -> b
+    com.zenas.backgroundmusic.util.FileAdapter this$0 -> a
+    android.graphics.Bitmap doInBackground(java.io.File[]) -> a
+    void onPostExecute(android.graphics.Bitmap) -> a
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.zenas.backgroundmusic.util.FileDialog -> com.zenas.backgroundmusic.a.j:
+    java.lang.String[] fileList -> a
+    java.util.List file_list -> b
+    java.io.File currentPath -> c
+    com.zenas.backgroundmusic.util.ListenerList fileListenerList -> d
+    com.zenas.backgroundmusic.util.ListenerList dirListenerList -> e
+    android.app.Activity activity -> f
+    boolean selectDirectoryOption -> g
+    boolean selectMode -> h
+    java.util.List fileEndsWith -> i
+    java.util.List directories -> j
+    boolean canCancel -> k
+    int offset -> l
+    android.app.Dialog dialog -> m
+    android.util.LruCache mMemoryCache -> n
+    boolean[] getCheckedItems() -> a
+    android.app.Dialog createFileDialog() -> b
+    void addFileListener(com.zenas.backgroundmusic.util.FileDialog$FileSelectedListener) -> a
+    void setSelectDirectoryOption(boolean) -> a
+    void addDirectoryListener(com.zenas.backgroundmusic.util.FileDialog$DirectorySelectedListener) -> a
+    void showDialog() -> c
+    void fireFileSelectedEvent(java.io.File) -> a
+    void fireDirectorySelectedEvent(java.util.List) -> a
+    void loadFileList(java.io.File) -> b
+    java.io.File getChosenFile(java.lang.String) -> b
+    void setFileEndsWith(java.lang.String) -> a
+    void access$0(com.zenas.backgroundmusic.util.FileDialog,boolean) -> a
+    void access$1(com.zenas.backgroundmusic.util.FileDialog,int) -> a
+    java.io.File access$2(com.zenas.backgroundmusic.util.FileDialog) -> a
+    void access$3(com.zenas.backgroundmusic.util.FileDialog,java.io.File) -> a
+    java.util.List access$4(com.zenas.backgroundmusic.util.FileDialog) -> b
+    void access$5(com.zenas.backgroundmusic.util.FileDialog,java.util.List) -> a
+    java.lang.String[] access$6(com.zenas.backgroundmusic.util.FileDialog) -> c
+    java.io.File access$7(com.zenas.backgroundmusic.util.FileDialog,java.lang.String) -> a
+    void access$8(com.zenas.backgroundmusic.util.FileDialog,java.io.File) -> b
+    java.util.List access$9(com.zenas.backgroundmusic.util.FileDialog) -> d
+    android.app.Dialog access$10(com.zenas.backgroundmusic.util.FileDialog) -> e
+    boolean access$11(com.zenas.backgroundmusic.util.FileDialog) -> f
+    java.util.List access$12(com.zenas.backgroundmusic.util.FileDialog) -> g
+com.zenas.backgroundmusic.util.FileDialog$1 -> com.zenas.backgroundmusic.a.k:
+    com.zenas.backgroundmusic.util.FileDialog this$0 -> a
+    int sizeOf(java.lang.String,android.graphics.Bitmap) -> a
+    int sizeOf(java.lang.Object,java.lang.Object) -> sizeOf
+com.zenas.backgroundmusic.util.FileDialog$10 -> com.zenas.backgroundmusic.a.l:
+    com.zenas.backgroundmusic.util.FileDialog this$0 -> a
+    java.io.File val$file -> b
+    void fireEvent(com.zenas.backgroundmusic.util.FileDialog$FileSelectedListener) -> a
+    void fireEvent(java.lang.Object) -> a
+com.zenas.backgroundmusic.util.FileDialog$11 -> com.zenas.backgroundmusic.a.m:
+    com.zenas.backgroundmusic.util.FileDialog this$0 -> a
+    java.util.List val$dir -> b
+    void fireEvent(com.zenas.backgroundmusic.util.FileDialog$DirectorySelectedListener) -> a
+    void fireEvent(java.lang.Object) -> a
+com.zenas.backgroundmusic.util.FileDialog$12 -> com.zenas.backgroundmusic.a.n:
+    com.zenas.backgroundmusic.util.FileDialog this$0 -> a
+    boolean accept(java.io.File,java.lang.String) -> accept
+com.zenas.backgroundmusic.util.FileDialog$2 -> com.zenas.backgroundmusic.a.o:
+    com.zenas.backgroundmusic.util.FileDialog this$0 -> a
+    int sizeOf(java.lang.String,android.graphics.Bitmap) -> a
+    int sizeOf(java.lang.Object,java.lang.Object) -> sizeOf
+com.zenas.backgroundmusic.util.FileDialog$3 -> com.zenas.backgroundmusic.a.p:
+    com.zenas.backgroundmusic.util.FileDialog this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.zenas.backgroundmusic.util.FileDialog$4 -> com.zenas.backgroundmusic.a.q:
+    com.zenas.backgroundmusic.util.FileDialog this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.zenas.backgroundmusic.util.FileDialog$5 -> com.zenas.backgroundmusic.a.r:
+    com.zenas.backgroundmusic.util.FileDialog this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.zenas.backgroundmusic.util.FileDialog$6 -> com.zenas.backgroundmusic.a.s:
+    com.zenas.backgroundmusic.util.FileDialog this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.zenas.backgroundmusic.util.FileDialog$7 -> com.zenas.backgroundmusic.a.t:
+    com.zenas.backgroundmusic.util.FileDialog this$0 -> a
+    void onClick(android.content.DialogInterface,int,boolean) -> onClick
+com.zenas.backgroundmusic.util.FileDialog$8 -> com.zenas.backgroundmusic.a.u:
+    com.zenas.backgroundmusic.util.FileDialog this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.zenas.backgroundmusic.util.FileDialog$9 -> com.zenas.backgroundmusic.a.v:
+    com.zenas.backgroundmusic.util.FileDialog this$0 -> a
+    com.zenas.backgroundmusic.util.FileAdapter val$fa -> b
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+com.zenas.backgroundmusic.util.FileDialog$DirectorySelectedListener -> com.zenas.backgroundmusic.a.w:
+    void directorySelected(java.util.List) -> a
+com.zenas.backgroundmusic.util.FileDialog$FileSelectedListener -> com.zenas.backgroundmusic.a.x:
+    void fileSelected(java.io.File) -> a
+com.zenas.backgroundmusic.util.HelpDialog -> com.zenas.backgroundmusic.a.y:
+    android.content.Context context -> a
+    com.zenas.backgroundmusic.util.ExpandableListAdapter listAdapter -> b
+    android.widget.ExpandableListView expListView -> c
+    java.util.List listDataHeader -> d
+    java.util.HashMap listDataChild -> e
+    android.app.AlertDialog dialog -> f
+    android.widget.TextView title -> g
+    void setTitle(java.lang.String) -> a
+    void show() -> a
+    void addHelpItem(java.lang.String,java.util.List) -> a
+    void addHelpItem(java.lang.String,java.lang.String) -> a
+    void updateList() -> b
+com.zenas.backgroundmusic.util.HelpDialog$1 -> com.zenas.backgroundmusic.a.z:
+    com.zenas.backgroundmusic.util.HelpDialog this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.zenas.backgroundmusic.util.HelpDialog$2 -> com.zenas.backgroundmusic.a.aa:
+    com.zenas.backgroundmusic.util.HelpDialog this$0 -> a
+    boolean onChildClick(android.widget.ExpandableListView,android.view.View,int,int,long) -> onChildClick
+com.zenas.backgroundmusic.util.ListAdapter -> com.zenas.backgroundmusic.a.ab:
+    android.content.Context context -> a
+    java.util.List testList -> b
+    java.util.List selectedIndice -> c
+    int selectedColor -> d
+    int selectedTextColor -> e
+    int defaultTextColor -> f
+    boolean multiChoice -> g
+    boolean hideNumbers -> h
+    void setSelectedIndex(int) -> a
+    void removeIndex(int) -> b
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+    void setSelectorColor(int) -> c
+    void setTextColor(int) -> d
+    void hideNumbers() -> a
+com.zenas.backgroundmusic.util.ListenerList -> com.zenas.backgroundmusic.a.ac:
+    java.util.List listenerList -> a
+    void add(java.lang.Object) -> a
+    void fireEvent(com.zenas.backgroundmusic.util.ListenerList$FireHandler) -> a
+com.zenas.backgroundmusic.util.ListenerList$FireHandler -> com.zenas.backgroundmusic.a.ad:
+    void fireEvent(java.lang.Object) -> a
+com.zenas.backgroundmusic.util.MessageDialog -> com.zenas.backgroundmusic.a.ae:
+    android.content.Context context -> a
+    android.app.AlertDialog dialog -> b
+    java.util.List messages -> c
+    java.lang.String title -> d
+    boolean yesno -> e
+    com.zenas.backgroundmusic.util.ListenerList completionListenerList -> f
+    com.zenas.backgroundmusic.util.ListenerList yesListenerList -> g
+    com.zenas.backgroundmusic.util.ListenerList noListenerList -> h
+    void createMessageDialog(int) -> a
+    void show() -> a
+    void addCompletionListener(com.zenas.backgroundmusic.util.MessageDialog$CompletionListener) -> a
+    void addYesListener(com.zenas.backgroundmusic.util.MessageDialog$YesListener) -> a
+    void addNoListener(com.zenas.backgroundmusic.util.MessageDialog$NoListener) -> a
+    void fireCompletedEvent() -> b
+    void fireYesEvent() -> c
+    void fireNoEvent() -> d
+    void access$0(com.zenas.backgroundmusic.util.MessageDialog) -> a
+    void access$1(com.zenas.backgroundmusic.util.MessageDialog) -> b
+    void access$2(com.zenas.backgroundmusic.util.MessageDialog) -> c
+com.zenas.backgroundmusic.util.MessageDialog$1 -> com.zenas.backgroundmusic.a.af:
+    com.zenas.backgroundmusic.util.MessageDialog this$0 -> a
+    int val$index -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.zenas.backgroundmusic.util.MessageDialog$2 -> com.zenas.backgroundmusic.a.ag:
+    com.zenas.backgroundmusic.util.MessageDialog this$0 -> a
+    int val$index -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.zenas.backgroundmusic.util.MessageDialog$3 -> com.zenas.backgroundmusic.a.ah:
+    com.zenas.backgroundmusic.util.MessageDialog this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.zenas.backgroundmusic.util.MessageDialog$4 -> com.zenas.backgroundmusic.a.ai:
+    com.zenas.backgroundmusic.util.MessageDialog this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.zenas.backgroundmusic.util.MessageDialog$5 -> com.zenas.backgroundmusic.a.aj:
+    com.zenas.backgroundmusic.util.MessageDialog this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.zenas.backgroundmusic.util.MessageDialog$6 -> com.zenas.backgroundmusic.a.ak:
+    com.zenas.backgroundmusic.util.MessageDialog this$0 -> a
+    void fireEvent(com.zenas.backgroundmusic.util.MessageDialog$CompletionListener) -> a
+    void fireEvent(java.lang.Object) -> a
+com.zenas.backgroundmusic.util.MessageDialog$7 -> com.zenas.backgroundmusic.a.al:
+    com.zenas.backgroundmusic.util.MessageDialog this$0 -> a
+    void fireEvent(com.zenas.backgroundmusic.util.MessageDialog$YesListener) -> a
+    void fireEvent(java.lang.Object) -> a
+com.zenas.backgroundmusic.util.MessageDialog$8 -> com.zenas.backgroundmusic.a.am:
+    com.zenas.backgroundmusic.util.MessageDialog this$0 -> a
+    void fireEvent(com.zenas.backgroundmusic.util.MessageDialog$NoListener) -> a
+    void fireEvent(java.lang.Object) -> a
+com.zenas.backgroundmusic.util.MessageDialog$CompletionListener -> com.zenas.backgroundmusic.a.an:
+    void completed() -> a
+com.zenas.backgroundmusic.util.MessageDialog$NoListener -> com.zenas.backgroundmusic.a.ao:
+    void no() -> a
+com.zenas.backgroundmusic.util.MessageDialog$YesListener -> com.zenas.backgroundmusic.a.ap:
+    void yes() -> a
+com.zenas.backgroundmusic.util.PlaylistAdapter -> com.zenas.backgroundmusic.a.aq:
+    android.content.Context context -> a
+    java.util.List testList -> b
+    java.util.List colors -> c
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    int getColor(int) -> a
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+com.zenas.backgroundmusic.util.PreferenceUtils -> com.zenas.backgroundmusic.a.ar:
+    android.content.Context mContext -> a
+    android.content.SharedPreferences preferences -> b
+    java.io.File mFolder -> c
+    java.lang.String lastImagePath -> d
+    java.lang.String getString(java.lang.String) -> a
+    void putString(java.lang.String,java.lang.String) -> a
+    void putList(java.lang.String,java.util.List) -> a
+    java.util.List getList(java.lang.String) -> b
+    java.util.List getListLooper(java.lang.String) -> c
+    void putListOfList(java.lang.String,java.util.List) -> b
+    void eraseOldValues(java.lang.String,int) -> a
+    java.util.List getListOfList(java.lang.String) -> d
+    void putListInt(java.lang.String,java.util.List) -> c
+    java.util.List getListInt(java.lang.String) -> e
+    void putBoolean(java.lang.String,boolean) -> a
+    boolean getBoolean(java.lang.String) -> f
+    void putFloat(java.lang.String,float) -> a
+    float getFloat(java.lang.String) -> g

@@ -1,0 +1,95 @@
+android.support.v7.appcompat.R
+android.support.v7.appcompat.R$anim
+android.support.v7.appcompat.R$attr
+android.support.v7.appcompat.R$bool
+android.support.v7.appcompat.R$color
+android.support.v7.appcompat.R$dimen
+android.support.v7.appcompat.R$drawable
+android.support.v7.appcompat.R$id
+android.support.v7.appcompat.R$integer
+android.support.v7.appcompat.R$layout
+android.support.v7.appcompat.R$string
+android.support.v7.appcompat.R$style
+android.support.v7.appcompat.R$styleable
+com.zenas.backgroundmusic.BackgroundMusic:
+    154:154:public boolean getPlayStarted()
+    180:180:public boolean songIsComplete()
+com.zenas.backgroundmusic.BuildConfig
+com.zenas.backgroundmusic.MusicService:
+    149:156:public void playPrevSong()
+com.zenas.backgroundmusic.R
+com.zenas.backgroundmusic.R$anim
+com.zenas.backgroundmusic.R$attr
+com.zenas.backgroundmusic.R$bool
+com.zenas.backgroundmusic.R$color
+com.zenas.backgroundmusic.R$dimen
+com.zenas.backgroundmusic.R$drawable
+com.zenas.backgroundmusic.R$id
+com.zenas.backgroundmusic.R$integer
+com.zenas.backgroundmusic.R$layout
+com.zenas.backgroundmusic.R$string
+com.zenas.backgroundmusic.R$style
+com.zenas.backgroundmusic.R$styleable
+com.zenas.backgroundmusic.activities.FolderFilter
+com.zenas.backgroundmusic.activities.MainActivity:
+    public static final java.lang.String MyPREFERENCES
+    1135:1144:private void playSong(int)
+    1149:1155:public static int randInt(int,int)
+    1159:1167:public void playRandomSong()
+    1170:1173:public void playNextSong()
+    1176:1183:public int nextSong()
+    1188:1193:public void playPrevSong()
+    1196:1197:public void setVolume(float)
+    1297:1309:private void fatalErrorCheck()
+    1322:1329:public android.view.View getViewByPosition(int,android.widget.ListView)
+com.zenas.backgroundmusic.activities.PlaylistActivity:
+    1076:1083:public android.view.View getViewByPosition(int,android.widget.ListView)
+com.zenas.backgroundmusic.activities.SettingsActivity:
+    467:477:public void showFileDialog(java.lang.String)
+com.zenas.backgroundmusic.activities.SettingsActivity$8
+com.zenas.backgroundmusic.util.ColorPicker:
+    71:73:public ColorPicker(android.content.Context,android.util.AttributeSet,int)
+    76:78:public ColorPicker(android.content.Context,android.util.AttributeSet)
+com.zenas.backgroundmusic.util.ConcurrentSorter:
+    10:10:public ConcurrentSorter()
+com.zenas.backgroundmusic.util.FileAdapter:
+    57:62:public void setSelectedIndex(int)
+    66:71:public void removeIndex(int)
+com.zenas.backgroundmusic.util.FileDialog:
+    private static final java.lang.String PARENT_DIR
+    258:259:public void removeFileListener(com.zenas.backgroundmusic.util.FileDialog$FileSelectedListener)
+    270:271:public void removeDirectoryListener(com.zenas.backgroundmusic.util.FileDialog$DirectorySelectedListener)
+com.zenas.backgroundmusic.util.ListenerList:
+    363:364:public void remove(java.lang.Object)
+    367:367:public java.util.List getListenerList()
+com.zenas.backgroundmusic.util.MessageDialog:
+    116:117:public void removeFileListener(com.zenas.backgroundmusic.util.MessageDialog$CompletionListener)
+    124:125:public void removeYesListener(com.zenas.backgroundmusic.util.MessageDialog$YesListener)
+    132:133:public void removeNoListener(com.zenas.backgroundmusic.util.MessageDialog$NoListener)
+com.zenas.backgroundmusic.util.PreferenceUtils:
+    java.lang.String DEFAULT_APP_IMAGEDATA_DIRECTORY
+    34:40:public android.graphics.Bitmap getImage(java.lang.String)
+    49:49:public java.lang.String getSavedImagePath()
+    67:71:public java.lang.String putImagePNG(java.lang.String,java.lang.String,android.graphics.Bitmap)
+    75:78:private java.lang.String setupFolderPath(java.lang.String)
+    82:131:private boolean saveBitmapPNG(java.lang.String,android.graphics.Bitmap)
+    135:135:public int getInt(java.lang.String)
+    139:139:public long getLong(java.lang.String)
+    147:154:public double getDouble(java.lang.String)
+    159:162:public void putInt(java.lang.String,int)
+    165:168:public void putLong(java.lang.String,long)
+    171:172:public void putDouble(java.lang.String,double)
+    260:269:public void putListBoolean(java.lang.String,java.util.List)
+    272:281:public java.util.List getListBoolean(java.lang.String)
+    305:308:public void remove(java.lang.String)
+    311:313:public java.lang.Boolean deleteImage(java.lang.String)
+    317:320:public void clear()
+    323:323:public java.util.Map getAll()
+    327:328:public void registerOnSharedPreferenceChangeListener(android.content.SharedPreferences$OnSharedPreferenceChangeListener)
+    331:332:public void unregisterOnSharedPreferenceChangeListener(android.content.SharedPreferences$OnSharedPreferenceChangeListener)
+com.zenas.backgroundmusic.util.SystemUiHider
+com.zenas.backgroundmusic.util.SystemUiHider$1
+com.zenas.backgroundmusic.util.SystemUiHider$OnVisibilityChangeListener
+com.zenas.backgroundmusic.util.SystemUiHiderBase
+com.zenas.backgroundmusic.util.SystemUiHiderHoneycomb
+com.zenas.backgroundmusic.util.SystemUiHiderHoneycomb$1

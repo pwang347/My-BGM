@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">My BGM</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+	<string name="stopBtn">Pause</string>
+	<string name="createBtn">Create Playlist</string>
+	<string name="selectAPlaylist">Select a playlist:</string>
+	<string name="playlistName">playlist name</string>
+	<string name="playlist">Playlist</string>
+	<string name="playlists">Playlists</string>
+	<string name="newPlaylist">New Playlist</string>
+	<string name="toggleButton">ToggleButton</string>
+	<string name="shuffleMode">Shuffle mode</string>
+	<string name="help">Help</string>
+	<string name="autoOnPlaylistClick">Autoplay on playlist click</string>
+	<string name="wallpaperImage">Wallpaper image</string>
+	<string name="defaultImg">Default</string>
+	<string name="moveUp">Move up</string>
+	<string name="moveDown">Move down</string>
+	<string name="selectFile">Select File</string>
+	<string name="selectSongs">Select songs</string>
+	<string name="done">Done</string>
+	<string name="maintainRatio">Maintain Ratio</string>
+	<string name="volumeControl">Volume Control</string>
+	<string name="musicService">Music Service</string>
+	<string name="stopService">Stop Service</string>
+	<string name="time">0:00</string>
+	<string name="closeMusicServiceOnExitingApp">Close music service on exiting app</string>
+	<string name="songSourceFolders">Song source folders</string>
+	<string name="manageFolders">Manage Folders</string>
+	<string name="other">Other</string>
+	<string name="hideHelpButton">Hide help button</string>
+	<string name="apply">Apply</string>
+	<string name="cancel">Cancel</string>
+	<string name="about">About</string>
+	<string name="editPlaylist">Edit Playlist</string>
+	<string name="sortAlphabetically">Sort Alphabetically</string>
+	<string name="otherSettings">Other Settings</string>
+	<string name="remove">Remove</string>
+	<string name="move">Move</string>
+	<string name="edit">Edit</string>
+</resources>

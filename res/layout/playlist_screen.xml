@@ -1,0 +1,253 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context="com.zenas.backgroundmusic.activities.MainActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/textureImg"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="95dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/texture" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/spaceBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/backBtn"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/back_button" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/playlistName"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" 
+                        android:layout_alignParentRight="true">
+
+                        <Button
+                            android:id="@+id/lockBtn"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/lock_button" />
+
+                        <Button
+                            android:id="@+id/settings_button"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/settings_button"
+                            android:gravity="center_vertical|center_horizontal" />
+
+                        <Button
+                            android:id="@+id/playHelpBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/help" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#66000000" />
+
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.21"
+                android:choiceMode="singleChoice"
+                android:clickable="true"
+                android:drawSelectorOnTop="false"
+                android:longClickable="true"
+                android:paddingTop="5dp" >
+            </ListView>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#66000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/upBtn"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/moveUp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/downBtn"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/moveDown"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/doneBtn"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/done"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                 >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                     android:layout_weight="1"  >
+
+                    <ImageView
+                        android:id="@+id/coverArt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="5dp"
+                        android:scaleType="fitXY" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/songName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="10dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textSize="15sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/songCurrent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.67"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="3dp"
+                                android:text="@string/time"
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                            <SeekBar
+                                android:id="@+id/seekBar1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="50" />
+
+                            <TextView
+                                android:id="@+id/songMax"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.67"
+                                android:paddingRight="5dp"
+                                android:paddingTop="3dp"
+                                android:text="@string/time"
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true" >
+
+                                <Button
+                                    android:id="@+id/prevBtn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/prev_button" />
+
+                                <Button
+                                    android:id="@+id/stopBtn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/play_button" />
+
+                                <Button
+                                    android:id="@+id/nextBtn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/next_button" />
+
+                                <Button
+                                    android:id="@+id/shuffleBtn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/shuffle_button" />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
+
+<!-- </FrameLayout>-->
